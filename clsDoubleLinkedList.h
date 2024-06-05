@@ -34,11 +34,6 @@ public:
 		newNode->next = head;
 		newNode->prev = NULL;
 
-		if (head = NULL)
-		{
-
-		}
-
 		if (head != NULL)
 		{
 			head->prev = newNode;
@@ -346,8 +341,7 @@ public:
 
 		if (head == NULL)
 		{
-			//The Code Works Even Without This Line
-			//newNode->prev = NULL;
+			newNode->prev = NULL;
 			head = newNode;
 		}
 
@@ -422,6 +416,7 @@ public:
 		//	head = current->next;
 
 		//	current->next->prev = current->prev;
+		//  head->prev = current->prev;
 		//}
 
 		head = head->next;
